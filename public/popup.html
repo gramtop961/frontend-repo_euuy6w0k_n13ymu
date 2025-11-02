@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Style Keeper</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <div class="wrapper" role="application">
+      <header class="header">
+        <h1 class="title">Style Keeper</h1>
+      </header>
+
+      <div class="tabs" role="tablist" aria-label="Style Keeper Tabs">
+        <button class="tab-btn" role="tab" aria-selected="true" aria-controls="panel-save" id="tab-save" data-tab="save">Save</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-apply" id="tab-apply" data-tab="apply">Apply</button>
+      </div>
+
+      <section class="panel" id="panel-save" role="tabpanel" aria-labelledby="tab-save" data-active="true">
+        <button id="save-style-btn" class="button" type="button">Save Page Style</button>
+      </section>
+
+      <section class="panel" id="panel-apply" role="tabpanel" aria-labelledby="tab-apply" data-active="false">
+        <p class="muted">No saved styles yet.</p>
+      </section>
+    </div>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>
